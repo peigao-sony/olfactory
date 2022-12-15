@@ -4,17 +4,10 @@ README
 该文件用来测试和展示书写README的各种markdown语法。GitHub的markdown语法在标准的markdown语法基础上做了扩充，称之为`GitHub Flavored Markdown`。简称`GFM`，GFM在GitHub上有广泛应用，除了README文件外，issues和wiki均支持markdown语法。
 
 ## 目录
-* [横线](#横线)
-* [标题](#标题)
-* [文本](#文本)
-    * 普通文本
+
+* [Data Curation](#DataCuration)
+    * Expert-Labeled Dataset
     * 单行文本
-    * 多行文本
-    * 文字高亮
-    * 换行
-    * 斜体
-    * 粗体
-    * 删除线
 * [图片](#图片)
     * 来源于网络的图片
     * GitHub仓库中的图片
@@ -36,93 +29,15 @@ README
 * [常用HTML语法](#常用HTML语法)
     * [折叠](#折叠)
     * [居中](#居中)
-* [其他](#其他)
-    * [徽章](#徽章)
-    * [star历史](#star历史)
-
-### 横线
------------
-***、---、___可以显示横线效果
-
-***
----
-___
 
 
+## Data Curation
+### Expert-Labeled Dataset
+We assembled an expert-labeled set of 5569 molecules from three separate sources: the [GoodScents](http://blog.csdn.net/guodongxiaren) perfume materials database (n = 3786]), the [Leffingwell PMP 2001](http://blog.csdn.net/guodongxiaren) database (n = 3561), and the [GoodScents](http://blog.csdn.net/guodongxiaren) perfume materials database (n = 3786]).
 
-## 标题
-```
-# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题
-```
-效果如下：
-
-# 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题
-
-
-## 文本
-### 普通文本
-这是一段普通的文本
 ### 单行文本
     Hello,大家好，我是果冻虾仁。
 在一行开头加入1个Tab或者4个空格。
-### 文本块
-#### 语法1
-在连续几行的文本开头加入1个Tab或者4个空格。
-
-    欢迎到访
-    很高兴见到您
-    祝您，早上好，中午好，下午好，晚安
-
-#### 语法2
-使用一对各三个的反引号：
-```
-欢迎到访
-我是C++码农
-你可以在知乎、CSDN、简书搜索【果冻虾仁】找到我
-```
-该语法也可以实现代码高亮，见[代码高亮](#代码高亮)
-### 文字高亮
-文字高亮功能能使行内部分文字高亮，使用一对反引号。
-语法：
-```
-`linux` `网络编程` `socket` `epoll`
-```
-效果：`linux` `网络编程` `socket` `epoll`
-
-也适合做一篇文章的tag
-#### 换行
-直接回车不能换行，
-可以在上一行文本后面补两个空格，
-这样下一行的文本就换行了。
-
-或者就是在两行文本直接加一个空行。
-
-也能实现换行效果，不过这个行间距有点大。
-#### 斜体、粗体、删除线
-
-|语法|效果|
-|----|-----|
-|`*斜体1*`|*斜体1*|
-|`_斜体2_`| _斜体2_|
-|`**粗体1**`|**粗体1**|
-|`__粗体2__`|__粗体2__|
-|`这是一个 ~~删除线~~`|这是一个 ~~删除线~~|
-|`***斜粗体1***`|***斜粗体1***|
-|`___斜粗体2___`|___斜粗体2___|
-|`***~~斜粗体删除线1~~***`|***~~斜粗体删除线1~~***|
-|`~~***斜粗体删除线2***~~`|~~***斜粗体删除线2***~~|
-
-    斜体、粗体、删除线可混合使用
 
 ## 图片
 基本格式：
@@ -437,35 +352,4 @@ xxxx
 
 其他任意需要居中展示的语法，都可以放在其中。
 
-## 其他
-还有一些非markdown语法，但是在README文件中也很实用的组件。
-### 徽章
-绘制徽章，首选就是[shields.io](https://shields.io/)  具体语法去官网探索。
 
-![LICENSE](https://img.shields.io/badge/license-MIT-green)
-![Author](https://img.shields.io/badge/Author-guodongxiaren-blue.svg)
-![zhihu-shield]
-
-其次有些第三方平台也提供方便的徽章，比如gitter：
-
-[![Join the chat at https://gitter.im/guodongxiaren/README](https://badges.gitter.im/guodongxiaren/README.svg)](https://gitter.im/guodongxiaren/README?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-### star历史
-star历史可以使用这个网站[star-history.com](https://star-history.com/)
-```
-[![Star History Chart](https://api.star-history.com/svg?repos=guodongxiaren/README&type=Date)](https://star-history.com/#guodongxiaren/README&Date)
-```
-这段代码的显示效果如下：
-
-[![Star History Chart](https://api.star-history.com/svg?repos=guodongxiaren/README&type=Date)](https://star-history.com/#guodongxiaren/README&Date)
-
-
---------------------------------
-[csdn]:http://blog.csdn.net/guodongxiaren "我的博客"
-[zhihu]:https://www.zhihu.com/people/guodongxiaren "我的知乎，欢迎关注"
-[weibo]:http://weibo.com/linpiaochen
-[baidu-logo]:http://www.baidu.com/img/bdlogo.gif "百度logo"
-[weibo-logo]:/img/weibo.png "点击图片进入我的微博"
-[csdn-logo]:/img/csdn.png "我的CSDN博客"
-[code-past]:/img/codepast-logo.jpg "公众号：编程往事"
-[zhihu-shield]:https://img.shields.io/badge/dynamic/json?color=0084ff&logo=zhihu&label=%E6%9E%9C%E5%86%BB%E8%99%BE%E4%BB%81&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dzhihu%26queryKey%3Dguodongxiaren
