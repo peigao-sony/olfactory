@@ -61,7 +61,7 @@ https://github.com/guodongxiaren/ImageCache/raw/master/Logo/foryou.gif
 注意例2的写法使用了**URL标识符**的形式，在[链接](#链接)一节有介绍。
 >在文末有code-past的定义：
 ```
-[code-past]:/img/codepast-logo.jpg "公众号：编程往事"
+[StatFigures]:/StatFigures/DataCurationStrategy.pdf "公众号：编程往事"
 ```
 
 ## 链接
