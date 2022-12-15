@@ -39,7 +39,6 @@ for perfumery, and so is biased away from malodorous compounds.
 
 There is also skew in label counts resulting from different levels of specificity, e.g. fruity will always be more common than pineapple.
 
-![Image text](StatFigures/DataCurationStrategy.png)
 
 
 
@@ -49,13 +48,16 @@ There is also skew in label counts resulting from different levels of specificit
 |Leffingwell|3523 to 3430|114|109|
 |Ifra|1135|190|162|
 
+![Image text](StatFigures/DataCurationStrategy.png)
+
+![Image text](StatFigures/LabelDistribution.png)
 
 ### 单行文本
     Hello,大家好，我是果冻虾仁。
 在一行开头加入1个Tab或者4个空格。
 
 ## Featurization of Molecules
-基本格式：
+We proposed that befitting data representation and customized deep models can improve model performance and provide generalization.
 ```
 ![alt](URL title)
 ```
