@@ -17,7 +17,7 @@ Olfactory
 
 ## Data Curation
 ### Expert-Labeled Dataset
-We assembled an expert-labeled set of 5569 molecules from three separate sources: the [GoodScents](http://blog.csdn.net/guodongxiaren) perfume materials database (n = 3786]), the [Leffingwell PMP 2001](http://blog.csdn.net/guodongxiaren) database (n = 3561), and the [GoodScents](http://blog.csdn.net/guodongxiaren) perfume materials database (n = 3786]).
+We assembled an expert-labeled set of 5596 molecules from three separate sources in [Pyrfume](https://github.com/pyrfume) Project: the [GoodScents](https://github.com/pyrfume/pyrfume-data/tree/main/goodscents) database (n = 6157), the [Leffingwell PMP 2001](https://github.com/pyrfume/pyrfume-data/tree/main/leffingwell) database (n = 3523), and the [Ifra 2019](https://github.com/pyrfume/pyrfume-data/tree/main/ifra_2019) database (n = 1135).
 
 
 The datasets share 2317 overlapping molecules. 
@@ -30,12 +30,25 @@ for perfumery, and so is biased away from malodorous compounds.
 
 |Type of Problem|Example|Strategy|
 |----|-----|-----|
-|`[我的简介](/example/profile.md)`|我的简介|我的简介|
-|`[example](./example)`|Ex|我的简介|
+|Synonymous|‘cedar’ / ‘cedarwood’|unify|
+|Mixed|‘toasted meat’|discard|
+|Incomprehensible|‘white’|discard|
+|Too broad|‘nice’|refer to Google's work|
+|Chemical|‘pyrazine’|refer to Google's work|
+
 
 There is also skew in label counts resulting from different levels of specificity, e.g. fruity will always be more common than pineapple.
 
 ![Image text](StatFigures/DataCurationStrategy.png)
+
+
+
+|Dataset|Number of molecules|Number of original labels|Number of calibrated labels|
+|----|-----|-----|----|
+|Goodscents|6157 to 6128|679|217||
+|Leffingwell|3523 to 3430|114|109|
+|Ifra|1135|190|162|
+
 
 ### 单行文本
     Hello,大家好，我是果冻虾仁。
