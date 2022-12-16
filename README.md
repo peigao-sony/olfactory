@@ -52,6 +52,8 @@ The QM9 dataset includes the composition of 130,000 organic molecules, spatial i
 We proposed that befitting data representation and customized deep models can improve model performance and provide generalization.
 For each molecule, we stored the data in the form of SMILES. The numeric features were extracted by [Mordred](https://github.com/mordred-descriptor/mordred) (Open Source), while The text and graph features are calculated with the RDkit toolkit.
 
+Stats for different features (dimensions).
+
 ### Second-order IterativeStratiﬁcation for Dataset Spliting
 Some odor descriptors were extremely common, like fruity or green, while others were rare, like radish or bready. Because of the common sense intuition that odor descriptors are similar and dissimilar, odor descriptors exhibit an extremely strong co-occurrence with each other. At the same time, because the label distribution is extremely different, we need fit dataset spliting methods. We used the same [Second-order IterativeStratiﬁcation](https://arxiv.org/abs/1704.08756) as benchwork
 
