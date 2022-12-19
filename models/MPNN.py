@@ -89,5 +89,5 @@ class MPNN(nn.Module):
         res = self.r.forward(h)
 
         if self.type == 'classification':
-            res = nn.LogSoftmax()(res)
+            res = torch.sigmoid(res)
         return res
