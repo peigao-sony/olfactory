@@ -28,10 +28,3 @@ class NNet(nn.Module):
             num_features *= s
         return num_features
 
-
-def main():
-    net = NNet(n_in=100, n_out=20)
-    print(net)
-
-if __name__=='__main__':
-    main()
