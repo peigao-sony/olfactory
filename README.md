@@ -40,6 +40,7 @@ The calibrated datasets share overlapping molecules and odor descriptors. We ret
 ![Image text](StatFigures/DataCurationStrategy.png)
 
 The label distribution of the fixed experimental dataset from three separate sources is shown in Figure. We left only odor descriptors with at least 30 representative molecules. 
+(some oversized molecules were deleted, 11980947,5287407,24238,44475014,62074,11686063,133082064,16211610,173849,CID23308253,24753271)
 
 ![Image text](StatFigures/LabelDistribution.png)
 
