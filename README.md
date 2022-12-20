@@ -61,5 +61,4 @@ Some odor descriptors were extremely common, like fruity or green, while others 
 ## Models
 ### MPNN Model for Graph Features
 
-
-
+    $ python main.py --epochs 300
