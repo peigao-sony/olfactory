@@ -124,6 +124,8 @@ class UpdateFunction(nn.Module):
 
     def u_mpnn(self, h_v, m_v, opt={}):
         h_in = h_v.view(-1,h_v.size(2))
+        if len(m_v.size()) <3:
+            m_v=torch.unsqueeze(m_v,0)
         m_in = m_v.view(-1,m_v.size(2))
         h_new = self.learn_modules[0](m_in[None,...],h_in[None,...])[0] # 0 or 1???
         return torch.squeeze(h_new).view(h_v.size())
