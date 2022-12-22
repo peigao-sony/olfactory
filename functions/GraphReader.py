@@ -8,10 +8,6 @@ import networkx as nx
 
 import numpy as np
 
-
-# In[ ]:
-
-
 def qm9_edges(g):
     remove_edges = []
     e={}    
@@ -57,9 +53,6 @@ def qm9_nodes(g, hydrogen=False):
     return h
 
 
-# In[ ]:
-
-
 class Qm9():
 #class Qm9(data.Dataset):
     # Constructor
@@ -95,9 +88,6 @@ class Qm9():
         self.target_transform = target_transform
 
 
-# In[ ]:
-
-
 def get_values(obj, start, end):
     vals = []
     for i in range(start, end):
@@ -106,7 +96,7 @@ def get_values(obj, start, end):
 def get_graph_stats(graph_obj_handle):
     inputs = len(graph_obj_handle)
     res = get_values(graph_obj_handle, 0, inputs) 
-    param = np.array(res)
+    param = np.array(res, dtype=object)
     
     stat_dict = {}
     
@@ -114,9 +104,6 @@ def get_graph_stats(graph_obj_handle):
     stat_dict['target_std'] = np.std(param, axis=0)
 
     return stat_dict
-
-
-# In[ ]:
 
 
 
