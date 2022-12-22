@@ -70,6 +70,6 @@ Parameters:
 
  ### MLP for Numeric Features
  
-   $ python main.py --model 'MLP'
+    $ python main.py --model 'MLP'
  
  dat_CID_mordred could be accessed via https://sonyjpn-my.sharepoint.com/:x:/g/personal/pei_gao_sony_com/ERY6fh3JQClFmz1WIFl_2TYBCSU8NPPAr2GZOtlfflrHBg?e=QcQGkp
