@@ -59,8 +59,17 @@ Stats for different features (dimensions).
 Some odor descriptors were extremely common, like fruity or green, while others were rare, like radish or bready. Because of the common sense intuition that odor descriptors are similar and dissimilar, odor descriptors exhibit an extremely strong co-occurrence with each other. At the same time, because the label distribution is extremely different, we need fit dataset spliting methods. We used the same [Second-order IterativeStratiﬁcation](https://arxiv.org/abs/1704.08756) as benchwork
 
 ## Models
+Parameters:
+    Namespace(batch_size=10, no_cuda=False, epochs=1, lr=0.0001, lr_decay=0.5, schedule=[0.1, 0.9], momentum=0.9, log_interval=100, prefetch=4, model='MLP')
+
 ### MPNN Model for Graph Features
 
-    $ python main.py --epochs 300
+    $ python main.py --model 'MPNN'
     
  Reference: https://github.com/ifding
+
+ ### MLP for Numeric Features
+ 
+   $ python main.py --model 'MLP'
+ 
+ dat_CID_mordred could be accessed via https://sonyjpn-my.sharepoint.com/:x:/g/personal/pei_gao_sony_com/ERY6fh3JQClFmz1WIFl_2TYBCSU8NPPAr2GZOtlfflrHBg?e=QcQGkp
