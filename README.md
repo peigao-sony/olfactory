@@ -60,7 +60,7 @@ Some odor descriptors were extremely common, like fruity or green, while others 
 
 ## Models
 Parameters:
-    Namespace(batch_size=10, no_cuda=False, epochs=1, lr=0.0001, lr_decay=0.5, schedule=[0.1, 0.9], momentum=0.9, log_interval=100, prefetch=4, model='MLP')
+    Namespace(batch_size=10, no_cuda=False, epochs=300, lr=0.0001, lr_decay=0.5, schedule=[0.1, 0.9], momentum=0.9, log_interval=100, prefetch=4, model='MLP')
 
 ### MPNN Model for Graph Features
 
@@ -70,6 +70,6 @@ Parameters:
 
  ### MLP for Numeric Features
  
-    $ python main.py --model 'MLP'
+   $ python main.py --model 'MLP'
  
  dat_CID_mordred could be accessed via https://sonyjpn-my.sharepoint.com/:x:/g/personal/pei_gao_sony_com/ERY6fh3JQClFmz1WIFl_2TYBCSU8NPPAr2GZOtlfflrHBg?e=QcQGkp
