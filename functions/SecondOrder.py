@@ -17,11 +17,11 @@ def szymanski_ts_eq_fold(n_splits, y):
 
     y_train = lil_matrix(y)
 
-    n_samples = y_train.shape[0] #593
-    n_labels = y_train.shape[1] #6
+    n_samples = y_train.shape[0] 
+    n_labels = y_train.shape[1] 
 
     percentage_per_fold = [1/float(n_splits) for i in range(n_splits)]
-    desired_samples_per_fold = np.array([percentage_per_fold[i]*n_samples for i in range(n_splits)]) #59.3
+    desired_samples_per_fold = np.array([percentage_per_fold[i]*n_samples for i in range(n_splits)]) 
 
     folds = [[] for i in range(n_splits)] #10 lists
 
